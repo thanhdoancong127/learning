@@ -31,20 +31,13 @@ Dưới đây là danh sách các extension cần thiết cho một dự án Rea
 3. Bracket Pair Colorizer:
 - Extension Bracket Pair Colorizer giúp tăng khả năng đọc mã nguồn của bạn bằng cách hiển thị các cặp dấu ngoặc với màu sắc khác nhau.
 - Khi bạn làm việc với React, bạn sẽ thường xuyên sử dụng các dấu ngoặc như (), {}, []. Với Bracket Pair Colorizer, bạn có thể dễ dàng nhận ra các cặp dấu ngoặc tương ứng và tránh việc đóng một cặp dấu ngoặc sai.
-4. Debugger for Chrome:
-- Extension Debugger for Chrome cho phép bạn debug ứng dụng React của bạn trên trình duyệt Chrome, giúp bạn dễ dàng tìm ra lỗi và khắc phục chúng.
-5. Live Server:
-- Một extension hỗ trợ cung cấp tính năng reload tự động khi có sự thay đổi trong mã nguồn.
-6. GitLens:
-- Một extension giúp theo dõi và quản lý Git trong VSCode. Nó cho phép xem các lịch sử thay đổi, commit, thay đổi branch và nhiều tính năng khác.
-7. Code Spell Checker: 
-- Một extension giúp kiểm tra lỗi chính tả trong code. Nó giúp cho code của bạn chính xác hơn và giảm thiểu sự cố gây ra bởi lỗi chính tả.
-8. Import Cost: 
-- Extension này giúp tính toán tổng kích thước của các module được import vào dự án của bạn. Điều này giúp cho bạn có thể tối ưu hóa dự án của mình và giảm thiểu thời gian tải trang.
-9. Color Highlight:
-- Một extension giúp tô màu cho các giá trị mã màu trong code, giúp dễ dàng phân biệt các giá trị màu.
-10. ES7 React/Redux/GraphQL/React-Native snippets: 
-- Cung cấp các snippet để viết code nhanh hơn.
+4. Debugger for Chrome: Extension Debugger for Chrome cho phép bạn debug ứng dụng React của bạn trên trình duyệt Chrome, giúp bạn dễ dàng tìm ra lỗi và khắc phục chúng.
+5. Live Server: Một extension hỗ trợ cung cấp tính năng reload tự động khi có sự thay đổi trong mã nguồn.
+6. GitLens: Một extension giúp theo dõi và quản lý Git trong VSCode. Nó cho phép xem các lịch sử thay đổi, commit, thay đổi branch và nhiều tính năng khác.
+7. Code Spell Checker: Một extension giúp kiểm tra lỗi chính tả trong code. Nó giúp cho code của bạn chính xác hơn và giảm thiểu sự cố gây ra bởi lỗi chính tả.
+8. Import Cost: Extension này giúp tính toán tổng kích thước của các module được import vào dự án của bạn. Điều này giúp cho bạn có thể tối ưu hóa dự án của mình và giảm thiểu thời gian tải trang.
+9. Color Highlight: Một extension giúp tô màu cho các giá trị mã màu trong code, giúp dễ dàng phân biệt các giá trị màu.
+10. ES7 React/Redux/GraphQL/React-Native snippets: Cung cấp các snippet để viết code nhanh hơn.
 11. Npm Intellisense: Tự động hoàn thành tên package và phương thức trong file package.json.
 12. Path Intellisense: Tự động hoàn thành đường dẫn file và thư mục.
 13. Prettier - Code formatter: Giúp định dạng code tự động và thống nhất trong dự án.
