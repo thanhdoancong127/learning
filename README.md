@@ -14,7 +14,8 @@ Lịch trình học TypeScript từ cơ bản đến nâng cao này sẽ giúp b
 * Biến và hằng số trong TypeScript
 * Câu lệnh điều kiện và vòng lặp trong TypeScript
 
-Bài tập: Viết một chương trình TypeScript tính tổng hai số nhập từ bàn phím
+Bài tập: 
+- Viết một chương trình TypeScript tính tổng hai số nhập từ bàn phím
 ### Ngày 2: Hàm và lớp trong TypeScript
 * Các loại hàm trong TypeScript
 * Tham số hàm trong TypeScript
@@ -23,14 +24,16 @@ Bài tập: Viết một chương trình TypeScript tính tổng hai số nhập
 * Tính kế thừa trong TypeScript
 * Tính đóng gói và bảo mật trong TypeScript
 
-Bài tập: Viết một chương trình TypeScript sử dụng lớp để tạo ra một đối tượng hình chữ nhật và tính toán diện tích và chu vi của nó
+Bài tập: 
+- Viết một chương trình TypeScript sử dụng lớp để tạo ra một đối tượng hình chữ nhật và tính toán diện tích và chu vi của nó
 ### Ngày 3: Module và giao diện trong TypeScript
 * Các khái niệm cơ bản về module trong TypeScript
 * Cách sử dụng module trong TypeScript
 * Tạo và sử dụng giao diện trong TypeScript
 * Sử dụng giao diện để tăng tính linh hoạt của mã nguồn TypeScript
 
-Bài tập: Viết một chương trình TypeScript sử dụng module và giao diện để tạo ra một ứng dụng quản lý nhân viên đơn giản
+Bài tập: 
+- Viết một chương trình TypeScript sử dụng module và giao diện để tạo ra một ứng dụng quản lý nhân viên đơn giản
 ### Ngày 4: Tính năng nâng cao của TypeScript
 * Tìm hiểu về generics trong TypeScript và cách sử dụng chúng để tạo ra mã nguồn đa dạng hơn và dễ tái sử dụng hơn.
 * Sử dụng generics để tạo ra các kiểu dữ liệu động, giúp giảm thiểu các lỗi kiểm tra kiểu dữ liệu và cải thiện tính bảo mật của mã nguồn.
@@ -39,9 +42,9 @@ Bài tập: Viết một chương trình TypeScript sử dụng module và giao 
 
 Ví dụ bài tập cho ngày 4:
 
-Viết một hàm generic sắp xếp các phần tử của một mảng theo thứ tự tăng dần hoặc giảm dần.
-Tạo một interface generic để mô tả các đối tượng có một thuộc tính key là một số nguyên.
-Sử dụng generics và Promise để tải dữ liệu từ một API và hiển thị kết quả trên trang web.
+- Viết một hàm generic sắp xếp các phần tử của một mảng theo thứ tự tăng dần hoặc giảm dần.
+- Tạo một interface generic để mô tả các đối tượng có một thuộc tính key là một số nguyên.
+- Sử dụng generics và Promise để tải dữ liệu từ một API và hiển thị kết quả trên trang web.
 
 ### Ngày 5:
 
@@ -50,5 +53,18 @@ Sử dụng generics và Promise để tải dữ liệu từ một API và hi�
 * Tạo ra một ứng dụng TypeScript đơn giản với các class và module.
 
 Ví dụ bài tập cho ngày 5:
-Tạo ra một module TypeScript chứa một class để quản lý thông tin sản phẩm (tên, giá, mô tả) và một class để quản lý giỏ hàng (thêm, xóa, cập nhật sản phẩm).
-Sử dụng tính năng private của TypeScript để bảo vệ các thuộc tính của class khỏi sự can thiệp từ bên ngoài.
+
+- Tạo ra một module TypeScript chứa một class để quản lý thông tin sản phẩm (tên, giá, mô tả) và một class để quản lý giỏ hàng (thêm, xóa, cập nhật sản phẩm).
+- Sử dụng tính năng private của TypeScript để bảo vệ các thuộc tính của class khỏi sự can thiệp từ bên ngoài.
+
+### Ngày 6:
+
+* Tìm hiểu về interface trong TypeScript và cách sử dụng chúng để định nghĩa các kiểu dữ liệu tùy chỉnh.
+* Sử dụng interface để định nghĩa các đối tượng và kiểu dữ liệu phức tạp.
+* Sử dụng interface để mô tả các hàm và phương thức có tham số và giá trị trả về kiểu dữ liệu tùy chỉnh.
+
+Ví dụ bài tập cho ngày 6:
+
+- Tạo ra một interface để mô tả các đối tượng khách hàng với các thuộc tính như tên, địa chỉ, số điện thoại, email.
+- Tạo ra một interface để mô tả các đối tượng sản phẩm với các thuộc tính như tên, giá, mô tả, ảnh.
+- Sử dụng interface để định nghĩa các hàm tính toán tổng, hiệu, tích, thương của hai số và trả về kiểu dữ liệu tùy chỉnh.
