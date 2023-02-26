@@ -38,7 +38,9 @@ Nếu Node.js đã được cài đặt, phiên bản của nó sẽ được hi
 
 Nếu đường dẫn đến thư mục chứa tệp thực thi của Node.js không được liệt kê trong danh sách PATH, bạn cần phải thêm nó vào.
 
-4. Tìm đường dẫn đến thư mục chứa tệp thực thi của Node.js. Thường thì tệp thực thi này sẽ nằm trong thư mục "C:\Program Files\nodejs" hoặc "C:\Program Files (x86)\nodejs". Nếu bạn đã cài đặt Node.js ở một vị trí khác, bạn cần phải tìm đường dẫn đến thư mục chứa tệp thực thi của Node.js theo đường dẫn của bạn.
+4. Tìm đường dẫn đến thư mục chứa tệp thực thi của Node.js.
+Thường thì tệp thực thi này sẽ nằm trong thư mục "C:\Program Files\nodejs" hoặc "C:\Program Files (x86)\nodejs".
+Nếu bạn đã cài đặt Node.js ở một vị trí khác, bạn cần phải tìm đường dẫn đến thư mục chứa tệp thực thi của Node.js theo đường dẫn của bạn.
 5. Mở Control Panel và chọn "System and Security" > "System" > "Advanced system settings".
 6. Trong cửa sổ System Properties, chọn tab "Advanced" và nhấp vào nút "Environment Variables".
 7. Tìm biến môi trường PATH trong danh sách System Variables và nhấp vào nút "Edit".
