@@ -53,3 +53,7 @@ Dưới đây là danh sách các extension cần thiết cho một dự án Rea
 16. Code Spell Checker: Kiểm tra lỗi chính tả trong code.
 17. Import Cost: Hiển thị dung lượng của package khi import vào file.
 18. REST Client: Cho phép kiểm tra và gửi các request HTTP trong VS Code.
+19. indent-rainbow: giúp highlight các phần tử có cùng indentation level trong code.
+20. Markdown All in One: hỗ trợ viết markdown.
+
+Lưu ý: Việc sử dụng extension phụ thuộc vào nhu cầu và thói quen của từng lập trình viên, vì vậy không phải tất cả các extension trên đều phù hợp với mọi người.
