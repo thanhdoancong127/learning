@@ -42,3 +42,13 @@ Ví dụ bài tập cho ngày 4:
 Viết một hàm generic sắp xếp các phần tử của một mảng theo thứ tự tăng dần hoặc giảm dần.
 Tạo một interface generic để mô tả các đối tượng có một thuộc tính key là một số nguyên.
 Sử dụng generics và Promise để tải dữ liệu từ một API và hiển thị kết quả trên trang web.
+
+### Ngày 5:
+
+* Tìm hiểu về modules trong TypeScript và cách sử dụng chúng để tách các phần của mã nguồn thành các module độc lập và tái sử dụng được.
+* Sử dụng các thuộc tính và phương thức public, private và protected trong các class của TypeScript để quản lý phạm vi truy cập của các thuộc tính và phương thức.
+* Tạo ra một ứng dụng TypeScript đơn giản với các class và module.
+
+Ví dụ bài tập cho ngày 5:
+Tạo ra một module TypeScript chứa một class để quản lý thông tin sản phẩm (tên, giá, mô tả) và một class để quản lý giỏ hàng (thêm, xóa, cập nhật sản phẩm).
+Sử dụng tính năng private của TypeScript để bảo vệ các thuộc tính của class khỏi sự can thiệp từ bên ngoài.
