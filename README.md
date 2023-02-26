@@ -16,7 +16,7 @@ Lịch trình học TypeScript từ cơ bản đến nâng cao này sẽ giúp b
 
 Bài tập: Viết một chương trình TypeScript tính tổng hai số nhập từ bàn phím
 ### Ngày 2: Hàm và lớp trong TypeScript
-**Các loại hàm trong TypeScript
+* Các loại hàm trong TypeScript
 * Tham số hàm trong TypeScript
 * Kiểu trả về của hàm trong TypeScript
 * Khai báo lớp trong TypeScript
