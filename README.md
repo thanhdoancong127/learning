@@ -22,7 +22,7 @@ Bài tập: Viết một chương trình TypeScript tính tổng hai số nhập
 * Khai báo lớp trong TypeScript
 * Tính kế thừa trong TypeScript
 * Tính đóng gói và bảo mật trong TypeScript
-* 
+
 Bài tập: Viết một chương trình TypeScript sử dụng lớp để tạo ra một đối tượng hình chữ nhật và tính toán diện tích và chu vi của nó
 ### Ngày 3: Module và giao diện trong TypeScript
 * Các khái niệm cơ bản về module trong TypeScript
