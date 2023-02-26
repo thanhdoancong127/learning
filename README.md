@@ -14,7 +14,8 @@ Lịch trình học TypeScript từ cơ bản đến nâng cao này sẽ giúp b
 * Biến và hằng số trong TypeScript
 * Câu lệnh điều kiện và vòng lặp trong TypeScript
 
-Bài tập: 
+Bài tập:
+
 1/ Viết một chương trình TypeScript tính tổng hai số nhập từ bàn phím
 ### Ngày 2: Hàm và lớp trong TypeScript
 * Các loại hàm trong TypeScript
@@ -25,6 +26,7 @@ Bài tập:
 * Tính đóng gói và bảo mật trong TypeScript
 
 Bài tập: 
+
 1. Viết một chương trình TypeScript sử dụng lớp để tạo ra một đối tượng hình chữ nhật và tính toán diện tích và chu vi của nó
 ### Ngày 3: Module và giao diện trong TypeScript
 * Các khái niệm cơ bản về module trong TypeScript
@@ -33,6 +35,7 @@ Bài tập:
 * Sử dụng giao diện để tăng tính linh hoạt của mã nguồn TypeScript
 
 Bài tập: 
+
 1. Viết một chương trình TypeScript sử dụng module và giao diện để tạo ra một ứng dụng quản lý nhân viên đơn giản
 ### Ngày 4: Tính năng nâng cao của TypeScript
 * Tìm hiểu về generics trong TypeScript và cách sử dụng chúng để tạo ra mã nguồn đa dạng hơn và dễ tái sử dụng hơn.
