@@ -4,7 +4,7 @@
 
 1. [Lịch trình học React cơ bản](https://github.com/thanhdoancong127/learning/blob/React/schedule-basic.md)<br>
    - [Exercise React cơ bản](https://github.com/thanhdoancong127/learning/blob/React/exercise-basic.md)
-   - [Settup Nodejs, Npm và một số lỗi đáng lưu ý](https://github.com/thanhdoancong127/learning/blob/React/basic/settup-extension.md)
+   - [Settup Nodejs, Npm và một số lỗi đáng lưu ý](https://github.com/thanhdoancong127/learning/blob/React/basic/setup-nodejs-n-npm.md)
    - [Settup Visual code & extension](https://github.com/thanhdoancong127/learning/blob/React/basic/settup-extension.md)
 2. [Lịch trình học React nâng cao](https://github.com/thanhdoancong127/learning/blob/React/schedule-advanced.md)
 3. [Lịch trình học React với typescipt](https://github.com/thanhdoancong127/learning/blob/React/schedule-with-typescript.md)
