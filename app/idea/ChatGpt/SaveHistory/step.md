@@ -3,7 +3,7 @@
 ### Tab Requestion (Tab 1)
 
 *   Form named RequestionForm gồm các input sau:
-    *   InputFile: name="fileStore", import tệp có đuôi .json, định dạng trong file sẽ có dạng:
+    *   InputFile: name="fileStore", import tệp có đuôi .json, sau khi import thành công sẽ tạo LocalStorage có tên "historiesStorage" và gán dữ liệu được lấy từ file đã được import vào historiesStorage, định dạng trong file sẽ có dạng:
     ```javascript
         "Account1": [
             {urlHistory: "", nameHistory:""},
@@ -20,10 +20,11 @@
     *   Button: name="sent" submit
 *   Khi người dùng bấm nút "sent", extension sẽ thực hiện các bước sau:
     *   Tạo một tab mới.
-    *   Tạo request với Url đã được chọn và method đã chọn.
+    *   Tạo request action với Url và method đã chọn.
     *   Set cookie của trang web hiện tại vào request.
     *   Set header của trang web hiện tại vào request.
     *   Gởi request đi và trả kết quả về ở tab mới đó.
+*   Nếu danh sách ở form RequestionForm trống, thì chỉ hiển thị **InputFile: name="fileStore"**.
 
 ### Tab Creation (Tab 2)
 
@@ -31,6 +32,5 @@
     *   Textbox: name ="historyUrl", nơi mà url sẽ được nhập.
     *   TextBox: name= "historyName", Định nghĩa tên cho "historyUrl".
     *   Button: name="updateIntoHead"
-*   Sau khi người dùng nhập dữ liệu cho "historyUrl", "historyName" và chọn "HistoryMethod" thì sẽ kiểm tra trong file ở "historySaver" đã có object chứa "historyUrl" và "historyName" chưa. Nếu chưa có, sẽ được thêm vào "historySaver" và cập nhật lại file "historydb.json". Sau đó reload lại combobox "HistoryMethod" ở form 2.
-*   Nếu danh sách ở form 2 trống, sẽ hiển thị nút để mở đến Tab 1.
+*   Sau khi người dùng nhập dữ liệu cho "historyUrl" và "historyName" thì sẽ kiểm tra trong localStorage với tên "historiesStorage" theo account hiện tại trên trang web. Nếu chưa có, sẽ thêm vào "historiesStorage". Sau đó reload lại combobox "HistoryMethod" ở form teen RequestionForm.
 
