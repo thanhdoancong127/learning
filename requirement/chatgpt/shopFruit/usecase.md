@@ -16,7 +16,7 @@ Use case 3: Chọn sản phẩm Mô tả: Người dùng nhấn vào kết quả
 *   Người dùng nhấn vào kết quả tìm kiếm trên CustomView. Kết quả:
 *   Sản phẩm được đưa xuống danh sách sản phẩm đã chọn bên dưới.
 
-Use case 4: Xóa sản phẩm khỏi danh sách
+## Use case 4: Xóa sản phẩm khỏi danh sách
 
 ### Mô tả
 
