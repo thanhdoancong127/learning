@@ -37,11 +37,37 @@ Có thể thêm các use case sau:
 
 *   4a. Người dùng không nhập từ khóa tìm kiếm. Ứng dụng không hiển thị danh sách kết quả tìm kiếm.
 
-Use case 2: Tìm kiếm sản phẩm Mô tả: Người dùng nhập từ khóa vào ô tìm kiếm và nhấn nút tìm kiếm, sau đó danh sách sản phẩm gợi ý được hiển thị trên CustomView. Điều kiện tiên quyết: Trang chủ được hiển thị. Hành động:
+## Use case 2: Tìm kiếm sản phẩm
 
-*   Người dùng nhập từ khóa vào ô tìm kiếm.
-*   Người dùng nhấn nút tìm kiếm. Kết quả:
-*   Danh sách sản phẩm gợi ý được hiển thị trên CustomView.
+### Tác nhân:
+
+Người dùng muốn tìm kiếm sản phẩm bằng cách nhập từ khóa vào ô tìm kiếm trên trang chủ. Ứng dụng sẽ hiển thị danh sách các gợi ý tìm kiếm dựa trên từ khóa đã nhập và lịch sử tìm kiếm trước đó của người dùng. Khi người dùng chọn một gợi ý tìm kiếm, danh sách sản phẩm hiển thị dưới ô tìm kiếm sẽ được cập nhật theo kết quả tìm kiếm.
+
+### Actors
+
+*   Người dùng
+
+### Tiền điều kiện:
+
+*   Ứng dụng được khởi chạy và đang ở trang chủ.
+*   Danh sách sản phẩm đã được load lên và hiển thị trên màn hình.
+
+### Luồng sự kiện chính:
+
+1.  Người dùng nhập từ khóa tìm kiếm vào ô tìm kiếm trên trang chủ.
+2.  Ứng dụng hiển thị danh sách gợi ý tìm kiếm dựa trên từ khóa đã nhập và lịch sử tìm kiếm trước đó của người dùng.
+3.  Người dùng chọn một gợi ý tìm kiếm trong danh sách hoặc tiếp tục nhập từ khóa của riêng mình.
+4.  Ứng dụng cập nhật danh sách sản phẩm hiển thị dưới ô tìm kiếm theo kết quả tìm kiếm.
+5.  Nếu không có kết quả tìm kiếm phù hợp, ứng dụng sẽ hiển thị thông báo cho người dùng.
+
+### Hậu điều kiện:
+
+*   Danh sách sản phẩm được cập nhật dựa trên từ khóa tìm kiếm của người dùng.
+
+### Luồng sự kiện thay thế:
+
+*   3a. Người dùng không chọn gợi ý tìm kiếm nào và tiếp tục nhập từ khóa của riêng mình. Quá trình tìm kiếm sẽ tiếp tục với từ khóa này.
+*   4a. Nếu danh sách sản phẩm đã được cập nhật dựa trên kết quả tìm kiếm, người dùng có thể nhấp vào sản phẩm để xem thông tin chi tiết.
 
 Use case 3: Chọn sản phẩm Mô tả: Người dùng nhấn vào kết quả tìm kiếm trên CustomView và sản phẩm được đưa xuống danh sách sản phẩm đã chọn bên dưới. Điều kiện tiên quyết: Danh sách sản phẩm gợi ý được hiển thị trên CustomView. Hành động:
 
