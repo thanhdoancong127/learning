@@ -1,21 +1,20 @@
 ## Step
 
-
 ### Tab Requestion (Tab 1)
 
 *   Form named RequestionForm gồm các input sau:
     *   InputFile: name="fileStore", import tệp có đuôi .json, định dạng trong file sẽ có dạng:
     ```javascript
-        data: {
-            account: "",
-            historySaver: [
-                {urlHistory: "", nameHistory:""},
-                {urlHistory: "", nameHistory:""},
-                {urlHistory: "", nameHistory:""}
-            ]}
+        "Account1": [
+            {urlHistory: "", nameHistory:""},
+            {urlHistory: "", nameHistory:""},
+            {urlHistory: "", nameHistory:""}
+        ], "Account2": [
+            {urlHistory: "", nameHistory:""},
+            {urlHistory: "", nameHistory:""},
+            {urlHistory: "", nameHistory:""}
+        ]
     ```
-
-     
     *   SelectBox: name="historySaver", chứa danh sách history trước đó đã được gởi. Trong trường hợp historyUrl sau khi submit mà chưa tồn lại trong danh sách này thì sẽ được thêm vào danh sách này.
     *   SelectBox: name="HistoryMethod", trong đó có thể chọn method (get, post, put,... )
     *   Button: name="sent" submit
