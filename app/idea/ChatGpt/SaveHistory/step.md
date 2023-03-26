@@ -1,17 +1,37 @@
-Để chỉnh sửa các bước của extension dựa trên yêu cầu của bạn, bạn có thể làm theo các bước sau:
+## Step
 
-1.  Tạo một form đầu tiên với các input sau:
 
-*   TextBox: name ="historyUrl", để nhập đường dẫn URL
-*   TextBox: name= "historyName", để đặt tên cho đường dẫn URL (optional)
-*   Button: name="updateIntoHead", để lưu đường dẫn URL và tên vào danh sách lưu trữ (historySaver) trong file "historydb.json"
+### Tab Requestion (Tab 1)
 
-2.  Tạo một form thứ hai với các input sau:
+*   Form named RequestionForm gồm các input sau:
+    *   InputFile: name="fileStore", import tệp có đuôi .json, định dạng trong file sẽ có dạng:
+    ```javascript
+        data: {
+            account: "",
+            historySaver: [
+                {urlHistory: "", nameHistory:""},
+                {urlHistory: "", nameHistory:""},
+                {urlHistory: "", nameHistory:""}
+            ]}
+    ```
 
-*   SelectBox: name="historySaver", chứa danh sách các đường dẫn URL và tên đã lưu trữ
-*   SelectBox: name="HistoryMethod", để chọn phương thức gửi yêu cầu (get, post, put...)
-*   Button: name="sent", để gửi yêu cầu đến đường dẫn URL đã chọn
+     
+    *   SelectBox: name="historySaver", chứa danh sách history trước đó đã được gởi. Trong trường hợp historyUrl sau khi submit mà chưa tồn lại trong danh sách này thì sẽ được thêm vào danh sách này.
+    *   SelectBox: name="HistoryMethod", trong đó có thể chọn method (get, post, put,... )
+    *   Button: name="sent" submit
+*   Khi người dùng bấm nút "sent", extension sẽ thực hiện các bước sau:
+    *   Tạo một tab mới.
+    *   Tạo request với Url đã được chọn và method đã chọn.
+    *   Set cookie của trang web hiện tại vào request.
+    *   Set header của trang web hiện tại vào request.
+    *   Gởi request đi và trả kết quả về ở tab mới đó.
 
-3.  Viết mã JavaScript để thực hiện các bước yêu cầu của bạn. Bạn cần tạo một XMLHttpRequest để gửi yêu cầu đến đường dẫn URL đã chọn, với phương thức gửi yêu cầu được chọn từ SelectBox "HistoryMethod". Sau đó, bạn cần lấy danh sách đường dẫn URL và tên đã lưu trữ từ file "historydb.json", và hiển thị chúng trong SelectBox "historySaver". Nếu đường dẫn URL và tên mới chưa có trong danh sách đã lưu trữ, bạn cần thêm chúng vào danh sách và lưu lại vào file "historydb.json". Sau đó, bạn cần reload lại SelectBox "HistoryMethod" để cập nhật danh sách phương thức gửi yêu cầu.
+### Tab Creation (Tab 2)
 
-Lưu ý: Trong trường hợp được đăng nhập vào url hoặc không tìm kiếm đượt token trong header thì sẽ hiện thị sẽ hiện thị ra 2 form như trên.
+*   Form named CreationForm gồm các input sau:
+    *   Textbox: name ="historyUrl", nơi mà url sẽ được nhập.
+    *   TextBox: name= "historyName", Định nghĩa tên cho "historyUrl".
+    *   Button: name="updateIntoHead"
+*   Sau khi người dùng nhập dữ liệu cho "historyUrl", "historyName" và chọn "HistoryMethod" thì sẽ kiểm tra trong file ở "historySaver" đã có object chứa "historyUrl" và "historyName" chưa. Nếu chưa có, sẽ được thêm vào "historySaver" và cập nhật lại file "historydb.json". Sau đó reload lại combobox "HistoryMethod" ở form 2.
+*   Nếu danh sách ở form 2 trống, sẽ hiển thị nút để mở đến Tab 1.
+
