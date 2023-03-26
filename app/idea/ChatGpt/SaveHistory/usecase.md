@@ -1,25 +1,26 @@
-Use case: Lưu trữ lịch sử request và phản hồi từ một API
+ ### Use case 1: Thêm mới một địa chỉ URL vào danh sách lưu trữ
 
-Mô tả:
+**Mô tả:** Người dùng muốn thêm mới một địa chỉ URL vào danh sách lưu trữ trong extension.
 
-Người dùng muốn lưu trữ lịch sử của các request và phản hồi từ một API. Họ muốn có thể thêm các request mới vào danh sách lịch sử và có thể xem lại lịch sử đã lưu trữ bất cứ lúc nào.
+**Các bước:**
 
-Để sử dụng tính năng lưu trữ này, người dùng thực hiện các bước sau:
+1.  Người dùng truy cập vào tab "Create New" trên giao diện extension.
+2.  Người dùng nhập địa chỉ URL vào trường "historyUrl".
+3.  Người dùng nhập tên cho địa chỉ URL vào trường "historyName".
+4.  Người dùng chọn method của địa chỉ URL trong SelectBox "HistoryMethod".
+5.  Extension kiểm tra nếu địa chỉ URL đã tồn tại trong danh sách lưu trữ, thì hiển thị thông báo lỗi và yêu cầu người dùng nhập lại.
+6.  Nếu địa chỉ URL chưa tồn tại trong danh sách, extension sẽ thêm địa chỉ URL và tên của nó vào danh sách lưu trữ và cập nhật vào file "historydb.json".
+7.  Extension sẽ reload lại SelectBox "HistoryMethod" để hiển thị method mới được thêm vào.
 
-1.  Mở extension trên trình duyệt.
-    
-2.  Tại giao diện extension, người dùng điền các thông tin cần thiết vào form thứ nhất bao gồm "historyUrl", "historyName", "HistoryMethod".
-    
-3.  Người dùng bấm nút "updateIntoHead" để cập nhật thông tin của request mới vào form thứ hai.
-    
-4.  Nếu request mới chưa được lưu trữ trong danh sách "historySaver" thì nó sẽ được thêm vào danh sách này cùng với tên đã định nghĩa và method được chọn và lưu vào file "historydb.json".
-    
-5.  Combobox "HistoryMethod" sẽ được reload lại với các giá trị mới nhất.
-    
-6.  Người dùng chọn một trong các request đã được lưu trong danh sách "historySaver" từ form thứ hai, chọn method và bấm nút "sent".
-    
-7.  Extension sẽ tạo ra một tab mới và gửi request tới API với các thông tin đã chọn từ form thứ hai. Cookie và header của trang web hiện tại sẽ được set vào request.
-    
-8.  Kết quả trả về từ API sẽ được hiển thị trên tab mới được tạo ra.
-    
-9.  Người dùng có thể xem lại lịch sử của các request và phản hồi từ API bằng cách chọn lại request đã lưu từ form thứ hai.
+### Use case 2: Gửi request tới địa chỉ URL được lưu trữ
+
+**Mô tả:** Người dùng muốn gửi request tới địa chỉ URL được lưu trữ.
+
+**Các bước:**
+
+1.  Người dùng truy cập vào tab "Request" trên giao diện extension.
+2.  Người dùng chọn địa chỉ URL trong SelectBox "historySaver".
+3.  Người dùng chọn method của địa chỉ URL trong SelectBox "HistoryMethod".
+4.  Extension tạo mới một tab và gởi request tới địa chỉ URL được chọn với method tương ứng.
+5.  Extension set cookie của trang web hiện tại vào request và set header của trang web hiện tại vào request.
+6.  Extension hiển thị kết quả trả về từ request trong tab mới được tạo.
