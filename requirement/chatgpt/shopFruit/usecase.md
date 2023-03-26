@@ -1,9 +1,41 @@
 Có thể thêm các use case sau:
 
-Use case 1: Hiển thị trang chủ Mô tả: Người dùng mở ứng dụng và trang chủ được hiển thị, bao gồm ô tìm kiếm và danh sách sản phẩm đã chọn. Điều kiện tiên quyết: Ứng dụng đã được cài đặt và được khởi chạy. Hành động:
+## Use Case 1: Tìm kiếm sản phẩm
 
-*   Người dùng mở ứng dụng. Kết quả:
-*   Trang chủ được hiển thị, bao gồm ô tìm kiếm và danh sách sản phẩm đã chọn.
+### Mô tả:
+
+*   Người dùng muốn tìm kiếm sản phẩm trong cửa hàng.
+*   Người dùng nhập từ khóa tìm kiếm vào ô tìm kiếm trên trang chủ.
+*   Ứng dụng hiển thị danh sách kết quả tìm kiếm (sử dụng custom view) dựa trên từ khóa tìm kiếm.
+*   Người dùng có thể chọn sản phẩm từ danh sách kết quả tìm kiếm để thêm vào giỏ hàng hoặc xem chi tiết sản phẩm.
+
+### Tác nhân:
+
+*   Người dùng
+*   Ứng dụng
+
+### Tiền điều kiện:
+
+*   Cửa hàng có ít nhất 1 sản phẩm.
+
+### Hậu điều kiện:
+
+*   Người dùng đã tìm được sản phẩm mình cần.
+*   Nếu người dùng chọn sản phẩm, sản phẩm sẽ được thêm vào giỏ hàng hoặc xem chi tiết sản phẩm.
+
+### Luồng sự kiện chính:
+
+1.  Người dùng mở ứng dụng cửa hàng.
+2.  Ứng dụng hiển thị trang chủ với ô tìm kiếm trên cùng.
+3.  Người dùng nhập từ khóa tìm kiếm vào ô tìm kiếm.
+4.  Người dùng nhấn nút tìm kiếm hoặc nhấn Enter trên bàn phím.
+5.  Ứng dụng hiển thị danh sách kết quả tìm kiếm (sử dụng custom view) dựa trên từ khóa tìm kiếm.
+6.  Người dùng chọn sản phẩm từ danh sách kết quả tìm kiếm.
+7.  Ứng dụng hiển thị thông tin chi tiết sản phẩm hoặc thêm sản phẩm vào giỏ hàng.
+
+### Luồng sự kiện thay thế:
+
+*   4a. Người dùng không nhập từ khóa tìm kiếm. Ứng dụng không hiển thị danh sách kết quả tìm kiếm.
 
 Use case 2: Tìm kiếm sản phẩm Mô tả: Người dùng nhập từ khóa vào ô tìm kiếm và nhấn nút tìm kiếm, sau đó danh sách sản phẩm gợi ý được hiển thị trên CustomView. Điều kiện tiên quyết: Trang chủ được hiển thị. Hành động:
 
