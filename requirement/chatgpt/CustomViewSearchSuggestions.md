@@ -3,7 +3,7 @@ Dựa trên các use case được mô tả trong tài liệu trên, các đối
 1.  MainActivity.java: Activity chính để hiển thị giao diện tìm kiếm và danh sách sản phẩm đã chọn.
 2.  CustomView.java: Custom View để hiển thị danh sách gợi ý sản phẩm.
 3.  Product.java: Class để lưu thông tin sản phẩm, bao gồm tên, hình ảnh, mô tả và giá.
-4.  ProductAdapter.java: Adapter để hiển thị danh sách sản phẩm trong Custom View.
+4.  ProductAdapter.java: Adapter để hiển thị danh sách sản phẩm trong Custom View. Ngoài là một Adapter để hiển thị danh sách sản phẩm đã chọn trong RecyclerView. Nó kế thừa từ RecyclerView. Adapter và sử dụng ViewHolder để hiển thị các item trong danh sách. Ngoài ra, ProductAdapter cũng sử dụng SwipeToDeleteCallback để xóa sản phẩm khỏi danh sách nếu người dùng swipe item sang trái.
 5.  activity\_main.xml: Layout cho MainActivity, bao gồm trường tìm kiếm và Custom View để hiển thị danh sách sản phẩm.
 6.  item\_product.xml: Layout cho mỗi item sản phẩm trong Custom View, bao gồm hình ảnh, tên sản phẩm và giá.
 7.  search\_suggestions.xml: Layout cho mỗi gợi ý sản phẩm trong danh sách tìm kiếm.
