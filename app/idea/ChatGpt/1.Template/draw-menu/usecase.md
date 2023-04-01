@@ -81,9 +81,22 @@ Các bước thực hiện chi tiết:
 
 **Usecase 5:** Thêm phần tử mới vào phần tử ul có class "draggable"
 
-1.  Người dùng thực hiện hành động click vào nút "Add Item" nằm bên trên phần tử ul có class "draggable".
-2.  Hệ thống tạo ra một phần tử li mới với thẻ a bên trong và thêm vào phần tử ul có class "draggable".
-3.  Phần tử li mới này có thể được kéo và thả để sắp xếp lại vị trí trong phần tử ul.
+Mục đích: Thêm một phần tử mới vào phần tử ul có class "draggable" trong một phần tử li đã có sẵn.
+
+Người dùng: Người dùng muốn thêm một phần tử mới vào phần tử ul có class "draggable" để sắp xếp các mục.
+
+Điều kiện tiên quyết: Phải có một phần tử li đã có sẵn và chứa phần tử ul có class "draggable".
+
+Bước thực hiện:
+
+1.  Tìm phần tử li chứa phần tử ul có class "draggable" cần thêm phần tử mới.
+2.  Tạo một phần tử li mới chứa phần tử div với class "menu-group".
+3.  Thêm một tiêu đề h3 cho phần tử div với nội dung mong muốn.
+4.  Tạo một phần tử ul mới với class "draggable" và thêm vào phần tử div.
+5.  Tạo một hoặc nhiều phần tử li mới cho phần tử ul mới với thẻ a bên trong.
+6.  Thêm sự kiện kéo và thả vào phần tử li mới và phần tử ul mới để có thể sắp xếp lại các mục.
+
+Kết quả: Phần tử mới được thêm vào phần tử ul có class "draggable" và có thể được sắp xếp lại bằng cách kéo và thả.
 
 **Usecase 6:** Xóa phần tử trong div "ungroup"
 
