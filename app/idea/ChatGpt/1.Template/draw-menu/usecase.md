@@ -36,9 +36,27 @@ Các bước thực hiện:
 
 Kết quả: Các mục trong phần tử ul có class "draggable" được sắp xếp lại và cập nhật vị trí mới của chúng khi người dùng kéo và thả.
 
-**Usecase 3:**  Hiển thị dropdown menu khi click vào phần tử h3 trong phần tử div có class "menu-group":
+**Use case 3:** Hiển thị dropdown menu khi click vào phần tử h3 trong phần tử div có class "menu-group"
 
-*   Khi người dùng click vào phần tử h3 trong phần tử div "menu-group", chúng ta sẽ thêm hoặc xóa class "active" cho phần tử ul con của nó để hiển thị hoặc ẩn đi dropdown menu tương ứng.
+Mô tả:
+
+*   Khi người dùng click vào phần tử h3 trong phần tử div có class "menu-group" thì sẽ hiển thị dropdown menu chứa các phần tử li với các thẻ a bên trong.
+*   Nếu dropdown menu đã được hiển thị thì khi người dùng click vào phần tử h3 lần nữa thì dropdown menu sẽ bị ẩn đi.
+
+Luồng sự kiện:
+
+1.  Lắng nghe sự kiện click vào phần tử h3 trong phần tử div có class "menu-group".
+2.  Kiểm tra xem dropdown menu của phần tử đó đã được hiển thị chưa.
+3.  Nếu dropdown menu đã được hiển thị thì ẩn đi.
+4.  Nếu dropdown menu chưa được hiển thị thì hiển thị dropdown menu.
+
+Các bước thực hiện chi tiết:
+
+1.  Lắng nghe sự kiện click vào phần tử h3 trong phần tử div có class "menu-group".
+2.  Lấy phần tử ul chứa các phần tử li với các thẻ a bên trong trong phần tử div cha của phần tử h3 đó.
+3.  Kiểm tra xem dropdown menu của phần tử đó đã được hiển thị chưa.
+4.  Nếu dropdown menu đã được hiển thị thì ẩn đi bằng cách: a. Đổi class của phần tử div cha của phần tử h3 thành "menu-group". b. Đổi class của phần tử ul chứa các phần tử li với các thẻ a bên trong trong phần tử div cha của phần tử h3 thành "draggable". c. Đổi giá trị của thuộc tính aria-expanded của phần tử h3 thành "false".
+5.  Nếu dropdown menu chưa được hiển thị thì hiển thị dropdown menu bằng cách: a. Đổi class của phần tử div cha của phần tử h3 thành "menu-group active". b. Đổi class của phần tử ul chứa các phần tử li với các thẻ a bên trong trong phần tử div cha của phần tử h3 thành "draggable active". c. Đổi giá trị của thuộc tính aria-expanded của phần tử h3 thành "true".
 
 **Usecase 4:**  Thêm phần tử mới vào div "ungroup":
 
