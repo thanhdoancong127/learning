@@ -58,9 +58,26 @@ Các bước thực hiện chi tiết:
 4.  Nếu dropdown menu đã được hiển thị thì ẩn đi bằng cách: a. Đổi class của phần tử div cha của phần tử h3 thành "menu-group". b. Đổi class của phần tử ul chứa các phần tử li với các thẻ a bên trong trong phần tử div cha của phần tử h3 thành "draggable". c. Đổi giá trị của thuộc tính aria-expanded của phần tử h3 thành "false".
 5.  Nếu dropdown menu chưa được hiển thị thì hiển thị dropdown menu bằng cách: a. Đổi class của phần tử div cha của phần tử h3 thành "menu-group active". b. Đổi class của phần tử ul chứa các phần tử li với các thẻ a bên trong trong phần tử div cha của phần tử h3 thành "draggable active". c. Đổi giá trị của thuộc tính aria-expanded của phần tử h3 thành "true".
 
-**Usecase 4:**  Thêm phần tử mới vào div "ungroup":
+**Use case 4:** Thêm phần tử mới vào div "ungroup"
 
-*   Khi người dùng click vào nút "Add Item" trong div "ungroup", chúng ta sẽ tạo một phần tử mới có class "menu-item" và chèn nó vào đầu div "ungroup".
+*   Mô tả:
+    *   Người dùng muốn thêm một phần tử mới vào phần tử div có class "ungroup".
+    *   Người dùng click vào nút "Thêm mới" trên thanh công cụ.
+    *   Một hộp thoại hiện ra yêu cầu người dùng nhập nội dung cho phần tử mới.
+    *   Người dùng nhập nội dung và click nút "Thêm" để thêm phần tử mới vào phần tử div "ungroup".
+    *   Phần tử mới sẽ được tạo ra với class "menu-item draggable" và một thẻ a bên trong, có thể kéo và thả để sắp xếp lại.
+*   Luồng sự kiện:
+    1.  Người dùng click vào nút "Thêm mới" trên thanh công cụ.
+    2.  Hiển thị hộp thoại yêu cầu nhập nội dung cho phần tử mới.
+    3.  Người dùng nhập nội dung và click nút "Thêm".
+    4.  Phần tử mới được tạo ra với class "menu-item draggable" và một thẻ a bên trong.
+*   Điều kiện tiên quyết:
+    *   Phải có phần tử div có class "ungroup" trong phần tử div có class "menu".
+*   Điều kiện sau:
+    *   Phần tử mới được thêm vào phần tử div có class "ungroup".
+*   Ngoại lệ:
+    *   Nếu người dùng không nhập nội dung khi yêu cầu, hiển thị thông báo lỗi và yêu cầu nhập lại.
+    *   Nếu có lỗi trong quá trình thêm phần tử mới, hiển thị thông báo lỗi cho người dùng.
 
 **Usecase 5:**  Thêm phần tử mới vào phần tử ul có class "draggable":
 
