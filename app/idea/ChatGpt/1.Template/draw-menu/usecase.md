@@ -122,5 +122,18 @@ Kết quả mong đợi:
 
 **Usecase 7:** Xóa phần tử trong phần tử ul có class "draggable"
 
-1.  Người dùng thực hiện hành động click vào biểu tượng xóa bên cạnh phần tử li trong phần tử ul có class "draggable".
-2.  Hệ thống xác nhận việc xóa phần tử và xóa nó khỏi phần tử ul có class "draggable".
+
+Mô tả:
+
+*   Khi người dùng click vào biểu tượng xóa trên phần tử có class "menu-item" trong phần tử ul có class "draggable", phần tử đó sẽ bị xóa khỏi danh sách.
+*   Nếu phần tử bị xóa là phần tử cuối cùng trong danh sách, phần tử trước đó sẽ trở thành phần tử cuối cùng.
+*   Nếu danh sách chỉ còn lại một phần tử, thì phần tử đó sẽ không thể bị xóa.
+*   Sau khi phần tử được xóa khỏi danh sách, sẽ có một sự kiện được kích hoạt để thông báo cho các module khác biết về việc này.
+
+Các bước thực hiện:
+
+1.  Lấy tất cả các phần tử có class "menu-item" trong phần tử ul có class "draggable".
+2.  Gắn sự kiện "click" cho biểu tượng xóa trên mỗi phần tử đó.
+3.  Khi xảy ra sự kiện "click", lấy phần tử cha của biểu tượng xóa (phần tử li), sau đó xóa phần tử đó khỏi danh sách.
+4.  Kiểm tra xem danh sách có còn ít nhất một phần tử không, nếu không thì disable sự kiện xóa cho phần tử cuối cùng.
+5.  Khi phần tử được xóa khỏi danh sách, gửi một sự kiện để thông báo cho các module khác.
