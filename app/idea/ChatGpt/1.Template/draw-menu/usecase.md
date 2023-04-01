@@ -79,14 +79,18 @@ Các bước thực hiện chi tiết:
     *   Nếu người dùng không nhập nội dung khi yêu cầu, hiển thị thông báo lỗi và yêu cầu nhập lại.
     *   Nếu có lỗi trong quá trình thêm phần tử mới, hiển thị thông báo lỗi cho người dùng.
 
-**Usecase 5:**  Thêm phần tử mới vào phần tử ul có class "draggable":
+**Usecase 5:** Thêm phần tử mới vào phần tử ul có class "draggable"
 
-*   Khi người dùng click vào nút "Add Group" trong phần tử div "menu-group", chúng ta sẽ tạo một phần tử mới có class "menu-group" và chèn nó vào đầu ul "draggable".
+1.  Người dùng thực hiện hành động click vào nút "Add Item" nằm bên trên phần tử ul có class "draggable".
+2.  Hệ thống tạo ra một phần tử li mới với thẻ a bên trong và thêm vào phần tử ul có class "draggable".
+3.  Phần tử li mới này có thể được kéo và thả để sắp xếp lại vị trí trong phần tử ul.
 
-**Usecase 6:**  Xóa phần tử trong div "ungroup":
+**Usecase 6:** Xóa phần tử trong div "ungroup"
 
-*   Khi người dùng click vào nút "Xóa" trong một phần tử có class "menu-item" trong div "ungroup", chúng ta sẽ xóa phần tử đó khỏi div "ungroup".
+1.  Người dùng thực hiện hành động click vào biểu tượng xóa bên cạnh phần tử div có class "menu-item" trong div "ungroup".
+2.  Hệ thống xác nhận việc xóa phần tử và xóa nó khỏi div "ungroup".
 
-**Usecase 7:**  Xóa phần tử trong phần tử ul có class "draggable":
+**Usecase 7:** Xóa phần tử trong phần tử ul có class "draggable"
 
-*   Khi người dùng click vào nút "Xóa" trong một phần tử có class "menu-group" hoặc "menu-item" trong ul "draggable", chúng ta sẽ xóa phần tử đó
+1.  Người dùng thực hiện hành động click vào biểu tượng xóa bên cạnh phần tử li trong phần tử ul có class "draggable".
+2.  Hệ thống xác nhận việc xóa phần tử và xóa nó khỏi phần tử ul có class "draggable".
