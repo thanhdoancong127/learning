@@ -1,66 +1,47 @@
-/* Phần tử div có class "menu" */
 .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #f5f5f5;
-    padding: 1rem;
-  }
-  
-  /* Phần tử div có class "ungroup" */
-  .ungroup {
-    background-color: #f8f8f8;
-    padding: 1rem;
-  }
-  
-  /* Phần tử div có class "menu-item" và thẻ a bên trong */
-  .menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    background-color: #fff;
+    width: 300px;
     border: 1px solid #ccc;
-    border-radius: 0.5rem;
+    border-radius: 5px;
+    padding: 10px;
   }
   
-  /* Phần tử ul chứa các phần tử li có class "menu-item" */
-  ul .menu-item {
-    margin: 0.5rem 0;
-  }
-  
-  /* Phần tử div có class "menu-group" */
-  .menu-group {
-    background-color: #fff;
+  .ungroup .menu-item {
     border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    padding: 1rem;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
   }
   
-  /* Tiêu đề h3 trong phần tử div có class "menu-group" */
-  .menu-group h3 {
-    margin: 0;
-  }
-  
-  /* Phần tử ul trong phần tử div có class "menu-group" */
-  .menu-group ul {
-    margin-top: 1rem;
-    padding-left: 1rem;
-  }
-  
-  /* Phần tử li trong phần tử ul trong phần tử div có class "menu-group" */
-  .menu-group li {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Phần tử li trong phần tử ul có class "draggable" */
-  ul.draggable li {
+  .ungroup .menu-item.draggable {
     cursor: move;
   }
   
-  /* Phần tử rỗng li trong phần tử ul có class "draggable" */
-  ul.draggable li:empty {
-    height: 0.5rem;
-    border: 1px dashed #ccc;
+  .menu-group {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .menu-group h3 {
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .menu-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-group li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .menu-group li.draggable {
+    cursor: move;
   }
   
