@@ -1,8 +1,6 @@
 ## Usecase:
 
-### Use case 1:
-
-Mô tả: Người dùng có thể kéo và thả một mục (menu-item) trong phần tử div có class "ungroup" để sắp xếp lại vị trí của nó trong phần tử div có class "ungroup".
+**Use case 1:** Người dùng có thể kéo và thả một mục (menu-item) trong phần tử div có class "ungroup" để sắp xếp lại vị trí của nó trong phần tử div có class "ungroup".
 
 Các bước thực hiện:
 
@@ -23,6 +21,7 @@ Các bước thực hiện:
     
     *   Lắng nghe sự kiện load trên toàn bộ tài liệu (window) và sử dụng phương thức addEventListener() để lắng nghe sự kiện load.
     *   Trong hàm handleLoad(), lặp lại các phần tử có class "draggable" và gắn sự kiện kéo và thả cho chúng bằng cách sử dụng phương thức addEventListener().
+
 **Usecase2:**  Sắp xếp lại các mục trong phần tử ul có class "draggable" khi kéo thả:
 
 *   Tương tự như use case 1, khi người dùng kéo thả một phần tử có class "menu-group" hoặc "menu-item" trong ul "draggable", chúng ta sẽ cập nhật lại vị trí các phần tử trong ul này.
