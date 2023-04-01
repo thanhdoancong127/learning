@@ -98,10 +98,27 @@ Bước thực hiện:
 
 Kết quả: Phần tử mới được thêm vào phần tử ul có class "draggable" và có thể được sắp xếp lại bằng cách kéo và thả.
 
-**Usecase 6:** Xóa phần tử trong div "ungroup"
+**Use case 6:** Xóa phần tử trong div "ungroup"
 
-1.  Người dùng thực hiện hành động click vào biểu tượng xóa bên cạnh phần tử div có class "menu-item" trong div "ungroup".
-2.  Hệ thống xác nhận việc xóa phần tử và xóa nó khỏi div "ungroup".
+Mô tả:
+
+*   Người dùng muốn xóa một phần tử có class "menu-item" trong div có class "ungroup".
+*   Khi người dùng click vào nút xóa của phần tử đó, phần tử sẽ bị xóa khỏi div "ungroup".
+
+Luồng sự kiện:
+
+1.  Người dùng click vào nút xóa của phần tử "menu-item" trong div "ungroup".
+2.  Xác nhận xóa phần tử.
+3.  Nếu người dùng đồng ý xóa, phần tử đó sẽ bị xóa khỏi div "ungroup".
+4.  Nếu người dùng không đồng ý xóa, thì không có hành động nào được thực hiện.
+
+Điều kiện tiên quyết:
+
+*   Phần tử muốn xóa phải có class "menu-item" và nằm trong div có class "ungroup".
+
+Kết quả mong đợi:
+
+*   Phần tử bị xóa khỏi div "ungroup" và không còn xuất hiện trên trang web.
 
 **Usecase 7:** Xóa phần tử trong phần tử ul có class "draggable"
 
