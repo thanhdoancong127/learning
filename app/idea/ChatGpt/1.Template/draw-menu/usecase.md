@@ -22,9 +22,19 @@ Các bước thực hiện:
     *   Lắng nghe sự kiện load trên toàn bộ tài liệu (window) và sử dụng phương thức addEventListener() để lắng nghe sự kiện load.
     *   Trong hàm handleLoad(), lặp lại các phần tử có class "draggable" và gắn sự kiện kéo và thả cho chúng bằng cách sử dụng phương thức addEventListener().
 
-**Usecase2:**  Sắp xếp lại các mục trong phần tử ul có class "draggable" khi kéo thả:
+**Use case 2:** Sắp xếp lại các mục trong phần tử ul có class "draggable" khi kéo thả.
 
-*   Tương tự như use case 1, khi người dùng kéo thả một phần tử có class "menu-group" hoặc "menu-item" trong ul "draggable", chúng ta sẽ cập nhật lại vị trí các phần tử trong ul này.
+Mô tả: Người dùng muốn sắp xếp lại các mục trong phần tử ul có class "draggable" bằng cách kéo và thả (drag and drop) chúng để thay đổi vị trí của chúng trong danh sách.
+
+Các bước thực hiện:
+
+1.  Người dùng nhấn và giữ chuột trái trên phần tử muốn di chuyển trong phần tử ul có class "draggable".
+2.  Khi chuột được giữ, phần tử đó sẽ được tạo ra một phiên bản sao chép (clone) và được chèn vào trang web tại vị trí chuột đang giữ.
+3.  Khi người dùng di chuyển chuột, phiên bản sao chép của phần tử đó sẽ di chuyển theo.
+4.  Khi người dùng thả chuột, phần tử đó sẽ được chèn vào vị trí mới trong phần tử ul có class "draggable".
+5.  Các phần tử khác trong phần tử ul có class "draggable" sẽ tự động thay đổi vị trí của mình để phù hợp với vị trí mới của phần tử được di chuyển.
+
+Kết quả: Các mục trong phần tử ul có class "draggable" được sắp xếp lại và cập nhật vị trí mới của chúng khi người dùng kéo và thả.
 
 **Usecase 3:**  Hiển thị dropdown menu khi click vào phần tử h3 trong phần tử div có class "menu-group":
 
