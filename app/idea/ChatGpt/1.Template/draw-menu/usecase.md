@@ -1,17 +1,31 @@
-## Tổng quát Usecase:
+## Usecase:
 
-Dựa vào mô tả, ta có thể phân tích các use case như sau:
+1.  Sắp xếp lại các mục trong phần tử div có class "ungroup" khi kéo thả:
 
-1.  User kéo và thả menu item trong div có class "ungroup": User có thể kéo và thả một phần tử menu item có class "menu-item draggable" để sắp xếp lại vị trí của nó trong phần tử div có class "ungroup".
-    
-2.  User kéo và thả menu item trong phần tử ul: User có thể kéo và thả một phần tử menu item có class "menu-item" để sắp xếp lại vị trí của nó trong phần tử ul.
-    
-3.  User kéo và thả menu group: User có thể kéo và thả một phần tử menu group có class "menu-group draggable" để sắp xếp lại vị trí của nó trong phần tử ul.
-    
-4.  User click vào một menu item: Khi user click vào một phần tử menu item có class "menu-item", trang web sẽ chuyển tới địa chỉ được đặt trong thẻ a bên trong.
-    
-5.  User click vào một menu group: Khi user click vào một phần tử menu group có class "menu-group", sẽ xảy ra toggle (mở/rút) của các phần tử menu item con nằm trong nó.
-    
-6.  User thêm một menu item mới: User có thể thêm một phần tử menu item mới vào phần tử ul bằng cách click vào nút "Thêm".
-    
-7.  User thêm một menu group mới: User có thể thêm một phần tử menu group mới vào phần tử ul bằng cách click vào nút "Thêm nhóm".
+*   Khi người dùng bắt đầu kéo thả một phần tử có class "menu-item" trong div "ungroup", chúng ta sẽ gán thuộc tính "dragging" cho phần tử đó để đánh dấu rằng đang được kéo thả.
+*   Khi người dùng kéo phần tử này, chúng ta sẽ di chuyển phần tử đó đến vị trí mới và cập nhật lại vị trí các phần tử khác trong div "ungroup".
+*   Khi người dùng thả phần tử đó, chúng ta sẽ xóa thuộc tính "dragging" và cập nhật lại vị trí các phần tử trong div "ungroup".
+
+2.  Sắp xếp lại các mục trong phần tử ul có class "draggable" khi kéo thả:
+
+*   Tương tự như use case 1, khi người dùng kéo thả một phần tử có class "menu-group" hoặc "menu-item" trong ul "draggable", chúng ta sẽ cập nhật lại vị trí các phần tử trong ul này.
+
+3.  Hiển thị dropdown menu khi click vào phần tử h3 trong phần tử div có class "menu-group":
+
+*   Khi người dùng click vào phần tử h3 trong phần tử div "menu-group", chúng ta sẽ thêm hoặc xóa class "active" cho phần tử ul con của nó để hiển thị hoặc ẩn đi dropdown menu tương ứng.
+
+4.  Thêm phần tử mới vào div "ungroup":
+
+*   Khi người dùng click vào nút "Add Item" trong div "ungroup", chúng ta sẽ tạo một phần tử mới có class "menu-item" và chèn nó vào đầu div "ungroup".
+
+5.  Thêm phần tử mới vào phần tử ul có class "draggable":
+
+*   Khi người dùng click vào nút "Add Group" trong phần tử div "menu-group", chúng ta sẽ tạo một phần tử mới có class "menu-group" và chèn nó vào đầu ul "draggable".
+
+6.  Xóa phần tử trong div "ungroup":
+
+*   Khi người dùng click vào nút "Xóa" trong một phần tử có class "menu-item" trong div "ungroup", chúng ta sẽ xóa phần tử đó khỏi div "ungroup".
+
+7.  Xóa phần tử trong phần tử ul có class "draggable":
+
+*   Khi người dùng click vào nút "Xóa" trong một phần tử có class "menu-group" hoặc "menu-item" trong ul "draggable", chúng ta sẽ xóa phần tử đó
